@@ -1,0 +1,41 @@
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.menu.close{
+  width: 78px;
+}
+
+.butt{
+  position: relative;
+  background: #E4E9F7;
+  height: 100vh;
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+.menu.close ~ .butt{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+.butt .bigButt{
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.butt .bigButt .bx-menu,
+.butt .bigButt .text{
+  color: #11101d;
+  font-size: 35px;
+}
+.butt .bigButt .bx-menu{
+  margin: 0 15px;
+  cursor: pointer;
+}
+
